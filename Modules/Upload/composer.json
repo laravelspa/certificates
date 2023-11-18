@@ -1,0 +1,26 @@
+{
+    "name": "nwidart/upload",
+    "description": "",
+    "authors": [
+        {
+            "name": "Nicolas Widart",
+            "email": "n.widart@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [],
+            "aliases": {
+
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\Upload\\": ""
+        }
+    },
+    "require": {
+        "spatie/laravel-medialibrary": "^10.0.0"
+    }
+}
