@@ -20,7 +20,7 @@ class ProfileUpdate extends Controller
 {
     public function __invoke(UpdateProfileRequest $request)
     {
-        try {
+        // try {
             $profile = User::where('id', auth()->id())->first();
             $request = $request->validated();
 
@@ -87,10 +87,10 @@ class ProfileUpdate extends Controller
             });
 
             return $this->success(['loginUser' => AuthResource::make($profile->load(['media'])), 'message' => __('status.updated', ['name' => $profile['username'], 'module' => __('modules.user')])]);
-        } catch (\Illuminate\Database\QueryException $e) {
-            $this->error(__('status.update_error'), Response::HTTP_INTERNAL_SERVER_ERROR);
-        } catch (\Exception $e) {
-            $this->error(trans('status.update_error'), Response::HTTP_INTERNAL_SERVER_ERROR);
-        }
+        // } catch (\Illuminate\Database\QueryException $e) {
+        //     $this->error(__('status.update_error'), Response::HTTP_INTERNAL_SERVER_ERROR);
+        // } catch (\Exception $e) {
+        //     $this->error(trans('status.update_error'), Response::HTTP_INTERNAL_SERVER_ERROR);
+        // }
     }
 }

@@ -11,14 +11,14 @@ class CertificateExportPDF extends Controller
 {
     public function __invoke(Certificate $certificate)
     {
-        // try {
+        try {
             $pdf = PDF::loadView('pdf.certificate', compact('certificate'));
 
             return $pdf->stream('document.pdf');
-        // } catch (\Illuminate\Database\QueryException $e) {
-        //     return $this->error(__('status.pdf_error'), Response::HTTP_INTERNAL_SERVER_ERROR);
-        // } catch (\Exception $e) {
-        //     return $this->error(__('status.pdf_error'), Response::HTTP_INTERNAL_SERVER_ERROR);
-        // }
+        } catch (\Illuminate\Database\QueryException $e) {
+            return $this->error(__('status.pdf_error'), Response::HTTP_INTERNAL_SERVER_ERROR);
+        } catch (\Exception $e) {
+            return $this->error(__('status.pdf_error'), Response::HTTP_INTERNAL_SERVER_ERROR);
+        }
     }
 }
