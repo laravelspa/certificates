@@ -8,6 +8,7 @@ return [
     'update_error' => "Updating Failed With Server Error",
     'create_error' => "Creating Failed With Server Error",
     'delete_error' => "Deleting Failed With Server Error",
+    'export_pdf_error' => "Exporting PDF Failed With Server Error",
     'import_error' => "Importing Failed With Server Error",
     'deleted_selected_success' => "Deleted selected successfully",
     'check_file_requirement' => "Check file requirement!",

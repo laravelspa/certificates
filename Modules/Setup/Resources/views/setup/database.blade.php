@@ -87,19 +87,20 @@
                                 </p>
                             @endif
                         </div>
+                        @if($data_present = Session::get('data_present'))
+                            @if($data_present)
+                                <div class="mb-3">
+                                    <div class="form-check">
+                                        <input type="hidden" name="overwrite_data" value="0">
+                                        <input type="checkbox" class="form-check-input" id="overwrite_data"
+                                            @if(old('overwrite_data')) checked @endif>
 
-                        @if(session('data_present', false))
-                            <div class="mb-3">
-                                <div class="form-check">
-                                    <input type="hidden" name="overwrite_data" value="0">
-                                    <input type="checkbox" class="form-check-input" id="overwrite_data"
-                                        @if(old('overwrite_data')) checked @endif>
-
-                                    <label class="form-check-label text-danger" for="overwrite_data">
-                                        @lang('setup::setup.database.overwrite_data')
-                                    </label>
+                                        <label class="form-check-label text-danger" for="overwrite_data">
+                                            @lang('setup::setup.database.overwrite_data')
+                                        </label>
+                                    </div>
                                 </div>
-                            </div>
+                            @endif
                         @endif
 
                         <button type="submit" class="btn btn-primary">

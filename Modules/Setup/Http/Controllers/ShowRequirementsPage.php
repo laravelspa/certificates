@@ -20,7 +20,7 @@ class ShowRequirementsPage
   protected function checkRequirements(): array
   {
     $results = [
-      'php_version' => PHP_VERSION_ID >= 80000,
+      'php_version' => PHP_VERSION_ID >= 80100,
       'extension_bcmath' => extension_loaded('bcmath'),
       'extension_ctype' => extension_loaded('ctype'),
       'extension_json' => extension_loaded('json'),

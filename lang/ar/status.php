@@ -8,6 +8,7 @@ return [
     'update_error' => "فشل التحديث بسبب خطأ فى السيرفر",
     'create_error' => "فشل الإدخال بسبب خطأ فى السيرفر",
     'delete_error' => "فشل الحذف بسبب خطأ فى السيرفر",
+    'export_pdf_error' => "فشل تصدير ملف PDF بسبب خطأ فى السيرفر",
     'import_error' => "فشل الإدخال بسبب خطأ فى السيرفر",
     'deleted_selected_success' => "تم حذف البيانات التى تم إحتيارها بنجاح",
     'check_file_requirement' => "أفحص متطلبات الملف",

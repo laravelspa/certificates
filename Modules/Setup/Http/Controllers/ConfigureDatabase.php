@@ -16,6 +16,10 @@ class ConfigureDatabase
   public function __invoke(ConfigureDatabaseRequest $request): RedirectResponse
   {
     $this->createTempDatabaseConnection($request->validated());
+    // dd(
+    //   $this->databaseHasData(),
+    //   !$request->has('overwrite_data')
+    // );
     if ($this->databaseHasData() && !$request->has('overwrite_data')) {
       Session::put('error', trans('setup::setup.database.data_present'));
       return redirect()->back()->with('data_present', true)->withInput();
@@ -24,7 +28,7 @@ class ConfigureDatabase
     $migrationResult = $this->migrateDatabase();
 
     if ($migrationResult === false) {
-      return redirect()->back()->withInput();
+      return redirect()->back()->with('data_present', true)->withInput();
     }
 
     $this->storeConfigurationInEnv();
