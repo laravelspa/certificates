@@ -1,0 +1,1 @@
+import{Q as r}from"./QPage.b6363586.js";import{_ as s}from"./plugin-vue_export-helper.21dcd24c.js";import{o as e,c as o,w as a,a3 as c,U as n,a as _}from"./app.3d0443e2.js";const l={};function f(p,u){const t=c("RouterView");return e(),o(r,{class:"q-pa-lg"},{default:a(()=>[(e(),o(n,null,{default:a(()=>[_(t)]),_:1}))]),_:1})}var w=s(l,[["render",f]]);export{w as default};

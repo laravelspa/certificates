@@ -119,14 +119,15 @@ export const fetchOptions = ({ commit }) => {
     })
 };
 
-export const exportPdf = ({ commit }, id) => {
+export const exportPdf = ({ commit, state }, id) => {
     fireLoadingSpinner('exporting_pdf')
     return new Promise((resolve, reject) => {
         CertificateModel.exportPDF(id).then(res => {
+            const cert = state.certificates.find(cert => cert.id == id);
             const url = window.URL.createObjectURL(new Blob([res]));
             const link = document.createElement("a");
             link.href = url;
-            link.setAttribute("download", `test.pdf`);
+            link.setAttribute("download", `${cert.serial_number}.pdf`);
             document.body.appendChild(link);
             link.click();
             fireSuccessNotify(res, t('messages.downloaded_successfully'))
