@@ -9,10 +9,6 @@
     "license": "MIT",
     "require": {
         "php": "^8.1",
-<<<<<<< HEAD
-=======
-        "brick/money": "^0.8.0",
->>>>>>> fa3d74d8676605ddb7aa773cba25dd27a826814a
         "carlos-meneses/laravel-mpdf": "^2.1",
         "doctrine/dbal": "^3.6",
         "guzzlehttp/guzzle": "^7.5",
