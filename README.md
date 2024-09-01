@@ -1,5 +1,5 @@
 Certificate System (Laravel & Vue). convert data to pdf.
-like this [Certificate PDF](https://laravelspa.github.iohttps://laravelspa.github.io/blog/img/portfolio/certificate-laravel-vue/0000002.pdf)
+like this [Certificate PDF](https://laravelspa.github.io/blog/img/portfolio/certificate-laravel-vue/0000002.pdf)
 
 ![Certificate Laravel & Vue](https://laravelspa.github.io/blog/img/portfolio/certificate-laravel-vue/login.png "Certificate Laravel & Vue")
 ![Certificate Laravel & Vue](https://laravelspa.github.io/blog/img/portfolio/certificate-laravel-vue/themes.png "Certificate Laravel & Vue")
