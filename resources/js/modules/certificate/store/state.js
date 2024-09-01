@@ -6,6 +6,6 @@ export default () => ({
         sortBy: "id",
         descending: true,
         certificate: 1,
-        rowsPerCertificate: 25,
+        rowsPerPage: 25,
         rowsNumber: 0    }
 })

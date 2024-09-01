@@ -1,114 +1,56 @@
-# Links
-* ID
-* Name
-* Slug
-* Icon
-* Type [Page, Custom Link, Social]
-* Blank ['true', 'false']
-* View ['Title', 'Icon', 'Both']
-* Url
-* Remarks
-* Is Active
+Certificate System (Laravel & Vue). convert data to pdf.
+like this [Certificate PDF](https://laravelspa.github.iolaravelspa.github.io/blog/img/portfolio/certificate-laravel-vue/0000002.pdf)
 
-# Linkable
-* ID
-* Link ID
-* Linkable ID
-* Linkable Type
+![Certificate Laravel & Vue](laravelspa.github.io/blog/img/portfolio/certificate-laravel-vue/login.png "Certificate Laravel & Vue")
+![Certificate Laravel & Vue](laravelspa.github.io/blog/img/portfolio/certificate-laravel-vue/themes.png "Certificate Laravel & Vue")
+![Certificate Laravel & Vue](laravelspa.github.io/blog/img/portfolio/certificate-laravel-vue/users.png "Certificate Laravel & Vue")
+![Certificate Laravel & Vue](laravelspa.github.io/blog/img/portfolio/certificate-laravel-vue/create_user.png "Certificate Laravel & Vue")
+![Certificate Laravel & Vue](laravelspa.github.io/blog/img/portfolio/certificate-laravel-vue/certificates.png "Certificate Laravel & Vue")
+![Certificate Laravel & Vue](laravelspa.github.io/blog/img/portfolio/certificate-laravel-vue/certificates_grid.png "Certificate Laravel & Vue")
+![Certificate Laravel & Vue](laravelspa.github.io/blog/img/portfolio/certificate-laravel-vue/create_certificate.png "Certificate Laravel & Vue")
+![Certificate Laravel & Vue](laravelspa.github.io/blog/img/portfolio/certificate-laravel-vue/roles.png "Certificate Laravel & Vue")
+![Certificate Laravel & Vue](laravelspa.github.io/blog/img/portfolio/certificate-laravel-vue/create_role.png "Certificate Laravel & Vue")
+![Certificate Laravel & Vue](laravelspa.github.io/blog/img/portfolio/certificate-laravel-vue/settings.png "Certificate Laravel & Vue")
+![Certificate Laravel & Vue](laravelspa.github.io/blog/img/portfolio/certificate-laravel-vue/system_settings.png "Certificate Laravel & Vue")
 
-# Taxonomy
-* ID
-* name
-* slug
-* Is Active
-* Remarks
-* Type [1-category, 2=tag, , brand]
+## Requirements
+- PHP ^8.2
 
-# Teams
-* ID
-* Name
-* Avatar
-* Job Title
-* Is Active
-* Remarks
-* Order
-* Social Media => morph (Link)
+## Packages
+- MPDF
 
-# Testimonials
-* ID
-* Name
-* Image
-* Job Title
-* Is Active
-* Remarks 
-* Order
-* Social Media => morph
-* Ptoject Type  [website - mobile app - social media - graphic ...etc]
+## Languages
+- **PHP** (Programming Language)
+- **HTML** (Markup Language)
+- **CSS** (Style Sheet Language)
+- **Javascript** (Scripting Language)
 
+## Frontend Framework
+- **Quasar**
 
-# Portfolios
-* ID
-* Name
-* Image
-* Description
-* URL
+## Backend Framework
+- **Laravel**
 
-# Service
-* ID
-* Name
-* Description
-* Image
+## Javascript Library
+- **Vue js**
 
+---
 
-# Clients
-* ID
-* Name
-* Remarks
-* Is Active
-* Order
-* Logo
+# Installation and Configuration
+- Copy .env.example file to .env file
+```bash
+  cp .env.example .env
+```
+- Find .env file in root directory and change the APP_URL param to your domain.
+- Also, Configure the Database parameters inside .env file.
 
-# Message
-* ID
-* Name
-* Mobile
-* Email
-* Subject
-* Body
+```bash
+  php artisan optimize:clear
+  php artisan migrate:fresh --seed
+  php artisan serve
+```
 
-# Posts
-* ID
-* Title
-* Slug
-* Description
-* Is Active
-* Remarks
-- Tags
-- Caregories
-
-
-
-# Sliders
-* ID
-* Name => may
-* Image
-* Link => may
-
-
-# Comments => Morph Relation
-# Users
-# Roles
-# Permissions
-# Media => Morph Relation
-# Settings
-
-# Product 
-* ID
-* name
-* slug
-* Price
-* Product Description
-* Remarks
-* Category ID
-* Brand ID
-* Is Active
+# access account
+- Owner account
+Username: admin
+Password: Passwordsecret1@

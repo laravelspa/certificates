@@ -18,6 +18,6 @@ class CertificatesList extends Controller
         $dir = $req->descending === 'true' ? 'desc' : 'asc';
         return CertificateResource::collection(Certificate::with(['createdBy:id,username'])->search($req->filter)
             ->orderBy($req->sortBy, $dir)
-            ->paginate($req->rowsPerCertificate));
+            ->paginate($req->rowsPerPage));
     }
 }

@@ -24,6 +24,7 @@
         "filepond": "^4.30.4",
         "filepond-plugin-file-validate-type": "^1.2.8",
         "filepond-plugin-image-preview": "^4.6.11",
+        "jspdf": "^2.5.1",
         "os": "^0.1.2",
         "quasar": "^2.11.2",
         "vue": "^3.2.36",

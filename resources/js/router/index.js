@@ -18,7 +18,7 @@ router.beforeResolve((to, from, next) => {
     
     if (to.meta.auth && !getToken()) next({ name: 'login', query: { redirect: to.path } })
 
-    if(!canAccess(to)) next({ name: '403' })
+    // if(!canAccess(to)) next({ name: '403' })
     
     else next()
   }

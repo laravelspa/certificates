@@ -32,7 +32,7 @@ const moduleRoutes = {
         layout: 'content',
         auth: true,
         title: 'certificate.edit',
-        permissions: ['edit-certificate', 'show-certificate']
+        permissions: ['edit-certificate']
       },
     },
     {

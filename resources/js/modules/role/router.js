@@ -32,7 +32,7 @@ const moduleRoutes = {
         layout: 'content',
         auth: true,
         title: 'role.edit',
-        permissions: ['edit-role', 'show-role']
+        permissions: ['edit-role']
       },
     },
   ]
