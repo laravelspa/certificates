@@ -15,6 +15,7 @@ like this [Certificate PDF](https://laravelspa.github.io/blog/img/portfolio/cert
 
 ## Requirements
 - PHP ^8.2
+- Node 20.0.0
 
 ## Packages
 - MPDF
@@ -48,6 +49,9 @@ like this [Certificate PDF](https://laravelspa.github.io/blog/img/portfolio/cert
   php artisan optimize:clear
   php artisan migrate:fresh --seed
   php artisan serve
+
+  npm install
+  npm run build
 ```
 
 # access account
